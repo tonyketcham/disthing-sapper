@@ -80,8 +80,10 @@ li {
   height: auto;
   margin: auto;
   border-right: 3px dashed rgba(255, 233, 165, 0.85);
-  border-bottom: 0px dashed rgba(255, 233, 165, 0.62);
-  border-left: 0px dashed #fff;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-left-style: none;
+  border-left-width: 0px;
   border-radius: 3px;
   opacity: 1;
   font-family: 'Proximanova webfont', sans-serif;
@@ -539,6 +541,10 @@ li {
   .container-2 {
     padding: 10px 16px;
   }
+  .container-3 {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -557,6 +563,13 @@ li {
   }
   .subscribe-form-input {
     width: 100%;
+    -webkit-transition: none 0ms ease;
+    transition: none 0ms ease;
+  }
+  .subscribe-form-input:hover {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
   }
   .heading-3 {
     font-size: 32px;
